@@ -22,6 +22,7 @@
     "test": "jest",
     "cjs": "tsc",
     "esm": "tsc --project tsconfig.esm.json",
+    "prepublishOnly": "yarn build",
     "semantic-release": "semantic-release"
   },
   "devDependencies": {
