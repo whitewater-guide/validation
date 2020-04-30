@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/whitewater-guide/validation/compare/v1.0.0...v1.0.1) (2020-04-21)
+
+
+### Bug Fixes
+
+* fix ci publish ([4e7389f](https://github.com/whitewater-guide/validation/commit/4e7389f330da85c5177adbb7606c06f95752d58d))
+
 # 1.0.0 (2020-04-21)
 
 
