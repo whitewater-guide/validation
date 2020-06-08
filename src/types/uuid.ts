@@ -8,7 +8,7 @@ const uuid = () =>
     name: 'is-uuid',
     message: 'yup:string.uuid',
     test(v) {
-      return isString(v) && isUUID(v);
+      return v == null || (isString(v) && isUUID(v));
     },
   });
 
