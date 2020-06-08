@@ -22,8 +22,9 @@ module.exports = {
     node: true,
   },
   rules: {
-    '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/ban-types': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
     'react/prop-types': 'off',
     'sort-imports': 'error',
   },
