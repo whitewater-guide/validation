@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/whitewater-guide/validation/compare/v1.1.1...v1.1.2) (2020-06-08)
+
+
+### Bug Fixes
+
+* uuid null/undefined ([bd6278c](https://github.com/whitewater-guide/validation/commit/bd6278cf9c446b1bf4fe293efc1929b8addeedd3))
+
 ## [1.1.1](https://github.com/whitewater-guide/validation/compare/v1.1.0...v1.1.1) (2020-06-08)
 
 
