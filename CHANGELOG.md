@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/whitewater-guide/validation/compare/v1.0.2...v1.1.0) (2020-06-08)
+
+
+### Features
+
+* update yup ([dd89122](https://github.com/whitewater-guide/validation/commit/dd89122485a553de4619d3953dc1c51ff89ce7ee))
+
 ## [1.0.2](https://github.com/whitewater-guide/validation/compare/v1.0.1...v1.0.2) (2020-04-30)
 
 
