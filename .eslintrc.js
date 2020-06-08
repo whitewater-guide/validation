@@ -23,6 +23,7 @@ module.exports = {
   },
   rules: {
     '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/ban-types': 'off',
     'react/prop-types': 'off',
     'sort-imports': 'error',
   },
