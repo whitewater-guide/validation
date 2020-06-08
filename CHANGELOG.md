@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/whitewater-guide/validation/compare/v1.1.0...v1.1.1) (2020-06-08)
+
+
+### Bug Fixes
+
+* uuid schema ([767f3a1](https://github.com/whitewater-guide/validation/commit/767f3a1ddb5310f025c5bef95465eb0d9f39bb86))
+
 # [1.1.0](https://github.com/whitewater-guide/validation/compare/v1.0.2...v1.1.0) (2020-06-08)
 
 
