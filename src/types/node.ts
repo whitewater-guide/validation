@@ -4,7 +4,7 @@ import uuid from './uuid';
 
 const node = () =>
   yup.object({
-    id: uuid(),
+    id: uuid().defined().nullable(false),
   });
 
 export default node;
