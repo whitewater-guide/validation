@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/whitewater-guide/validation/compare/v1.1.4...v1.1.5) (2020-06-14)
+
+
+### Bug Fixes
+
+* mixed defined locale ([25a6e84](https://github.com/whitewater-guide/validation/commit/25a6e84728887e2a02e5e5fb2cefd9a6e30c8b2e))
+
 ## [1.1.4](https://github.com/whitewater-guide/validation/compare/v1.1.3...v1.1.4) (2020-06-14)
 
 
