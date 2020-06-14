@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/whitewater-guide/validation/compare/v1.1.2...v1.1.3) (2020-06-14)
+
+
+### Bug Fixes
+
+* strict node uuids ([7e87905](https://github.com/whitewater-guide/validation/commit/7e87905adfeff35bdcc4e890e2781031f1138b7d))
+
 ## [1.1.2](https://github.com/whitewater-guide/validation/compare/v1.1.1...v1.1.2) (2020-06-08)
 
 
