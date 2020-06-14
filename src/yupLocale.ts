@@ -1,5 +1,6 @@
 export const mixed = {
   default: 'yup:mixed.default',
+  defined: 'yup:mixed.required',
   required: 'yup:mixed.required',
   oneOf: ({ values }: any) => ({ key: 'yup:mixed.oneOf', options: { values } }),
   notOneOf: ({ values }: any) => ({
