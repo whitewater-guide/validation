@@ -7,18 +7,32 @@ interface ValidatorOptions {
   noUnknown?: boolean;
 }
 
-export const createValidator = (
-  schema: yup.Schema<any>,
+// yup doesn't export it properly
+interface YupValidationOpts {
+  strict?: boolean;
+  abortEarly?: boolean;
+  stripUnknown?: boolean;
+  recursive?: boolean;
+}
+
+function isObjectSchema(
+  schema: yup.SchemaOf<any>,
+): schema is yup.ObjectSchema<any> {
+  return schema._type === 'object';
+}
+
+export function createValidator(
+  schema: yup.SchemaOf<any>,
   options: ValidatorOptions = {},
-) => {
+) {
   const { strict = true, noUnknown = true } = options;
-  const isObjectSchema = schema instanceof yup.object;
+
   const actualSchema =
-    isObjectSchema && noUnknown
-      ? (schema as yup.ObjectSchema).clone().noUnknown()
+    isObjectSchema(schema) && noUnknown
+      ? (schema.clone() as yup.ObjectSchema<any>).noUnknown()
       : schema;
 
-  const opts: yup.ValidateOptions = {
+  const opts: YupValidationOpts = {
     abortEarly: false,
     stripUnknown: false,
   };
@@ -28,12 +42,12 @@ export const createValidator = (
   }
 
   return (value: any) => actualSchema.validateSync(value, opts);
-};
+}
 
-export const createSafeValidator = (
-  schema: yup.Schema<any>,
+export function createSafeValidator(
+  schema: yup.SchemaOf<any>,
   options: ValidatorOptions = {},
-) => {
+) {
   const throwingValidator = createValidator(schema, options);
   return (value: any) => {
     try {
@@ -43,4 +57,4 @@ export const createSafeValidator = (
       return yupToFormErrors(e);
     }
   };
-};
+}

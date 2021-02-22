@@ -59,11 +59,11 @@ describe('loose options', () => {
 
   it('should handle other schemas', () => {
     const validator = createSafeValidator(stringSchema, {
-      strict: false,
+      strict: true,
       noUnknown: false,
     });
-    expect(validator({ foo: 'bar' })).toBeNull();
+    expect(validator({ foo: 'bar' })).not.toBeNull();
     expect(validator('foo')).toBeNull();
-    expect(validator(1)).toBeNull();
+    expect(validator(1)).not.toBeNull();
   });
 });
